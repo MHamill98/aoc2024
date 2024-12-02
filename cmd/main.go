@@ -1,10 +1,11 @@
 package main
 
 import (
-	"aoc2024lib"
 	"flag"
 	"fmt"
 	"log"
+
+	"github.com/MHamill98/aoc2024/internal"
 )
 
 func main() {
@@ -19,7 +20,9 @@ func main() {
 
 	switch *day {
 	case 1:
-		aoc2024lib.Day1(input_file_path)
+		internal.Day1(input_file_path)
+	case 2:
+		internal.Day2(input_file_path)
 	default:
 		log.Fatalf("Day %d not implemented", *day)
 	}

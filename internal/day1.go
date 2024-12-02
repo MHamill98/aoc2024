@@ -1,4 +1,4 @@
-package aoc2024lib
+package internal
 
 import (
 	"fmt"
