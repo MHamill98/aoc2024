@@ -29,6 +29,8 @@ func main() {
 		internal.Day4(input_file_path)
 	case 5:
 		internal.Day5(input_file_path)
+	case 6:
+		internal.Day6(input_file_path)
 	default:
 		log.Fatalf("Day %d not implemented", *day)
 	}
