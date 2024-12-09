@@ -2,7 +2,6 @@ package internal
 
 import (
 	"fmt"
-	"math"
 	"strconv"
 	"strings"
 )
@@ -78,15 +77,4 @@ func buildDay6Inputs(input []string) ([]int, [][]int) {
 	}
 
 	return targets, numLines
-}
-
-func concat(a, b int) int {
-	bTest := b
-	bDigits := 0
-	for bTest > 0 {
-		bDigits++
-		bTest /= 10
-	}
-
-	return a*int(math.Pow(10, float64(bDigits))) + b
 }
