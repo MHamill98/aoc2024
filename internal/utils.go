@@ -9,13 +9,18 @@ func abs(x int) int {
 	return x
 }
 
+func numDigs(num int) int {
+	digs := 0
+	for num != 0 {
+		digs++
+		num /= 10
+	}
+	return digs
+}
+
 func concat(a, b int) int {
 	bTest := b
-	bDigits := 0
-	for bTest > 0 {
-		bDigits++
-		bTest /= 10
-	}
+	bDigits := numDigs(bTest)
 
 	return a*int(math.Pow(10, float64(bDigits))) + b
 }
